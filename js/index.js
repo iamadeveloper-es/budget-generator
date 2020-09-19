@@ -1,0 +1,1 @@
+"use strict";console.log("App Works");var dani="dani",numbers=[4,9,16,25],x=numbers.map(Math.sqrt);
