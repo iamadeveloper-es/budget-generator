@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -13,35 +14,39 @@
         <h1>Budget Generator</h1>
     </header>
     <main>
-        <div class="form-container">
-            <form action="">
-                <fieldset>
-                    <label for="company-name">Nombre De La Empresa</label>
-                    <input type="text" id="company-name" name="nombre">
-                    <label for="cif">CIF</label>
-                    <input type="text" id="cif" name="cif">
-                    <label for="adress">Dirección</label>
-                    <input type="text" id="adress" name="adress">
-                </fieldset>
-                <fieldset>
-                    <label for="concept">Concepto</label>
-                    <input type="text" id="concept" name="concept">
-                </fieldset>
-                <fieldset>
-                    <label for="base">Base Imponible</label>
-                    <input type="text" id="base" name="base">
-                    <label for="irpf">IRPF</label>
-                    <input type="text" id="irpf" name="irpf">
-                    <label for="iva">IVA</label>
-                    <input type="text" id="iva" name="iva">
-                </fieldset>
-                <fieldset>
-                    <label for="total">Total</label>
-                    <input type="text" id="total" name="total">
-                </fieldset>
-                <button type="submit" id="calc-total">Calcular</button>
-            </form>
-        </div>
+        <section class="section form">
+            <div class="form-container">
+                <form action="">
+                    <fieldset>
+                        <label for="company-name">Nombre De La Empresa</label>
+                        <input type="text" id="company-name" name="nombre">
+                        <label for="cif">CIF</label>
+                        <input type="text" id="cif" name="cif">
+                        <label for="adress">Dirección</label>
+                        <input type="text" id="adress" name="adress">
+                    </fieldset>
+                    <fieldset>
+                        <label for="concept">Concepto</label>
+                        <input type="text" id="concept" name="concept">
+                    </fieldset>
+                    <fieldset>
+                        <label for="base">Base Imponible</label>
+                        <input type="text" id="base" name="base">
+                        <label for="irpf">IRPF</label>
+                        <input type="text" id="irpf" name="irpf">
+                        <label for="iva">IVA</label>
+                        <input type="text" id="iva" name="iva">
+                    </fieldset>
+                    <fieldset>
+                        <label for="total">Total</label>
+                        <input type="text" id="total" name="total">
+                    </fieldset>
+                    <div class="btn-container">
+                        <button class="btn btn__blue" type="submit" id="calc-total">Calcular</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
     <footer></footer>
     <script src="js/index.js"></script>

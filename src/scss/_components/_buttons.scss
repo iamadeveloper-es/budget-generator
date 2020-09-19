@@ -1,0 +1,16 @@
+.btn-container{
+    width: 80%;
+    text-align: center;
+    margin: $mAuto;
+}
+.btn{
+    padding: .8rem 1.8rem;
+    border: none;
+    cursor: pointer;
+    border-radius: $radiusRegular;
+    margin: 1rem 0;
+    &.btn__blue{
+        background-color: $navyBlue;
+        color: $white;
+    }
+}
