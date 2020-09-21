@@ -16,40 +16,90 @@
     <main>
         <section class="section form">
             <div class="form-container">
-                <form action="">
-                    <fieldset>
+                <form class="container" action="">
+                    <div class="flex__container">
+                        <div class="small-fields flex-item">
+                            <label for="date">Fecha</label>
+                            <input type="text" id="date" name="date">
+                        </div>
+                        <div class="small-fields flex-item">
+                            <label for="cif">CIF</label>
+                            <input type="text" id="cif" name="cif">
+                        </div>
+                    </div>
+                    <div>
                         <label for="company-name">Nombre De La Empresa</label>
                         <input type="text" id="company-name" name="nombre">
-                        <label for="cif">CIF</label>
-                        <input type="text" id="cif" name="cif">
                         <label for="adress">Dirección</label>
                         <input type="text" id="adress" name="adress">
-                    </fieldset>
-                    <fieldset>
+                    </div>
+                    <div>
                         <label for="concept">Concepto</label>
                         <input type="text" id="concept" name="concept">
-                    </fieldset>
-                    <fieldset>
-                        <label for="base">Base Imponible</label>
-                        <input type="text" id="base" name="base">
-                        <label for="irpf">IRPF</label>
-                        <input type="text" id="irpf" name="irpf">
-                        <label for="iva">IVA</label>
-                        <input type="text" id="iva" name="iva">
-                    </fieldset>
-                    <fieldset>
-                        <label for="total">Total</label>
-                        <input type="text" id="total" name="total">
-                    </fieldset>
+                    </div>
+                    <div class="flex__container">
+                        <div class="small-fields flex-item">
+                            <label for="base">Base Imponible</label>
+                            <input type="text" id="base" name="base">
+                        </div>
+                        <div class="small-fields flex-item">
+                            <label for="irpf">IRPF</label>
+                            <input type="text" id="irpf" name="irpf">
+                        </div>
+                        <div class="small-fields flex-item">
+                            <label for="iva">IVA</label>
+                            <input type="text" id="iva" name="iva">
+                        </div>
+                    </div>
                     <div class="btn-container">
-                        <button class="btn btn__blue" type="submit" id="calc-total">Calcular</button>
+                        <button class="btn btn__blue" type="submit" id="crear">Crear</button>
                     </div>
                 </form>
             </div>
         </section>
+        <section class="section section__budget hide" id="budget">
+            <div class="container budget__container">
+                <div class="flex-item">
+                    <p>Fecha:</p>
+                    <p class="output budget__fecha"></p>
+                </div>
+                <div class="flex-item">
+                    <p>Nombre de la Empresa:</p>
+                    <p class="output budget__company-name"></p>
+                </div>
+                <div class="flex-item flex__col">
+                    <p>CIF:</p>
+                    <p class="output budget__cif"></p>
+                </div>
+                <div class="flex-item flex__col">
+                    <p>Dirección</p>
+                    <p class="output budget__address"></p>
+                </div>
+                <div class="flex-item flex__col">
+                    <p>Concepto:</p>
+                    <p class="output budget__concept"></p>
+                </div>
+                <div class="flex-item flex__col">
+                    <p>Base Imponible</p>
+                    <p class="output budget__base"></p>
+                </div>
+                <div class="flex-item flex__col">
+                    <p>IRPF:</p>
+                    <p class="output budget__irpf"></p>
+                </div>
+                <div class="flex-item flex__col">
+                    <p>IVA:</p>
+                    <p class="output budget__iva"></p>
+                </div>
+                <div class="flex-item total__conatiner">
+                    <p>Total:</p>
+                    <p class="output budget__total"></p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
-    <script src="js/index.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
