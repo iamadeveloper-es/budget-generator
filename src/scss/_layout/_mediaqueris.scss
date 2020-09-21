@@ -1,0 +1,14 @@
+@media screen and(min-width: 768px){
+    .small-fields{
+        min-width: 25%;
+    }
+    .flex__container{
+        display: flex;
+        &.flex__col{
+            /* flex-direction: column; */
+        }
+    }
+    .flex-item{
+        margin-right: 2rem;
+    }
+}
