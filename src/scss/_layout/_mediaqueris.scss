@@ -4,9 +4,6 @@
     }
     .flex__container{
         display: flex;
-        &.flex__col{
-            /* flex-direction: column; */
-        }
     }
     .flex-item{
         margin-right: 2rem;

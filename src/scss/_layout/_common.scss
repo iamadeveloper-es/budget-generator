@@ -23,14 +23,27 @@ fieldset{
     border: none;
     padding: 0;
 }
+.fieldset{
+    margin-bottom: 2.5rem;
+}
 input[type="text"]{
     display: block;
     width: 100%;
-    margin-bottom: 2.5rem;
     height: 2.5rem;
     padding: .7rem;
     border: 1px solid $grey;
-    border-radius: $radiusRegular
+    border-radius: $radiusRegular;
+    &.wrong-input{
+        border: 1px solid #df5e5e;
+    }
 
+}
+input[type="checkbox"]{
+    margin-right: 1rem;
+}
+.date{
+    input[type="text"]{
+        margin-bottom: .5rem;
+    }
 }
 

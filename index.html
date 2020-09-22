@@ -17,38 +17,51 @@
         <section class="section form">
             <div class="form-container">
                 <form class="container" action="">
-                    <div class="flex__container">
-                        <div class="small-fields flex-item">
+                    <div class="flex__container fieldset">
+                        <div class="small-fields flex-item date">
                             <label for="date">Fecha</label>
-                            <input type="text" id="date" name="date">
+                            <input type="text" id="date" name="date" placeholder="xx/xx/xxxx">
+                            <span class="error-mssg"></span>
+                            <label for="today-check">Fecha de Hoy</label>
+                            <input type="checkbox" name="today-check" id="today-check">
+                            <span class="error-mssg"></span>
                         </div>
                         <div class="small-fields flex-item">
                             <label for="cif">CIF</label>
-                            <input type="text" id="cif" name="cif">
+                            <input type="text" id="cif" name="cif" placeholder="Nif, Cif, Nº de documento">
+                            <span class="error-mssg"></span>
                         </div>
                     </div>
-                    <div>
+                    <div class="fieldset">
                         <label for="company-name">Nombre De La Empresa</label>
-                        <input type="text" id="company-name" name="nombre">
+                        <input type="text" id="company-name" name="nombre" placeholder="Nombre de la compañía">
+                        <span class="error-mssg"></span>
+                    </div>
+                    <div class="fieldset">
                         <label for="adress">Dirección</label>
-                        <input type="text" id="adress" name="adress">
+                        <input type="text" id="adress" name="adress" placeholder="Dirección de la compañía">
+                        <span class="error-mssg"></span>
                     </div>
-                    <div>
+                    <div class="fieldset">
                         <label for="concept">Concepto</label>
-                        <input type="text" id="concept" name="concept">
+                        <input type="text" id="concept" name="concept" placeholder="ej: Trabajos Diseño McDonalds">
+                        <span class="error-mssg"></span>
                     </div>
-                    <div class="flex__container">
+                    <div class="flex__container fieldset">
                         <div class="small-fields flex-item">
                             <label for="base">Base Imponible</label>
-                            <input type="text" id="base" name="base">
+                            <input type="text" id="base" name="base" placeholder="">
+                            <span class="error-mssg"></span>
                         </div>
                         <div class="small-fields flex-item">
                             <label for="irpf">IRPF</label>
-                            <input type="text" id="irpf" name="irpf">
+                            <input type="text" id="irpf" name="irpf" placeholder="">
+                            <span class="error-mssg"></span>
                         </div>
                         <div class="small-fields flex-item">
                             <label for="iva">IVA</label>
-                            <input type="text" id="iva" name="iva">
+                            <input type="text" id="iva" name="iva" placeholder="">
+                            <span class="error-mssg"></span>
                         </div>
                     </div>
                     <div class="btn-container">
@@ -58,6 +71,7 @@
             </div>
         </section>
         <section class="section section__budget hide" id="budget">
+            <h2>Tu Factura ha sido generada</h2>
             <div class="container budget__container">
                 <div class="flex-item">
                     <p>Fecha:</p>
